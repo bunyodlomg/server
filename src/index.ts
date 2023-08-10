@@ -6,12 +6,7 @@ const cors = require('cors')
 
 dotenv.config()
 const port = process.env.PORT || 8080
-const corsOptions = {
-    origin:'http://localhost:8000', 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200
-}
-app.use(cors(corsOptions))
+
 // const getData = async () => {
 //     try {
 //         const malumot = await fetch('https://dummyjson.com/products')

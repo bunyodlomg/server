@@ -19,12 +19,6 @@ const cors = require('cors');
 // import productModel from './models/product.model';
 dotenv_1.default.config();
 const port = process.env.PORT || 8080;
-const corsOptions = {
-    origin: 'http://localhost:8000',
-    credentials: true,
-    optionSuccessStatus: 200
-};
-app_1.default.use(cors(corsOptions));
 // const getData = async () => {
 //     try {
 //         const malumot = await fetch('https://dummyjson.com/products')
